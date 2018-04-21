@@ -2,7 +2,7 @@
 import json
 
 Templates = {
-'ship': {
+'ship_template': {
 		'Name' : 'ship_name',
 		'Class': 'ship_class_name',
 		'Captain': 'captain_name()',
