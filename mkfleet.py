@@ -6,6 +6,7 @@ import random
 import argparse
 import pprint
 import random_line
+
 from stellarwar import *
 import capt_name
 import mkship
@@ -25,9 +26,8 @@ def fleet_name():
     return random.choice(fn)
 
 
-def ship_class_names(ship_def):
-    sd = json.load(open(ship_def))
-    return [n for n in sd]
+def load_ship_classes(ship_def):
+    return json.load(open(ship_def))
 
 
 def _renumber_ships(ship_list):
@@ -36,7 +36,7 @@ def _renumber_ships(ship_list):
     for ship in ship_list:
         ship['number'] = nmbr
         new_list.append(ship)
-        nmbr = nmbr = 1
+        nmbr = nmbr + 1
     return new_list
 
 
@@ -64,7 +64,6 @@ def make_fleet(player, ship_classes):
         except:
             fleet[key] = fleet_template[key]
     fleet['Ships'] = ships
-#    fleet['Player'] = player
     return fleet
     
 
@@ -90,9 +89,9 @@ def main(argv):
                         help='Ship classes and numbers of each to make a fleet. e.g. Destroyer:4 Cruiser:2')
 
     args = parser.parse_args()
-    class_defs = ship_class_names(args.class_def)
+    class_defs = load_ship_classes(args.class_def)
     if class_defs:
-        class_def_list = [ cdef['Name'] for cdef in class_defs ]
+        class_def_list = [ cdef for cdef in class_defs ]
     if args.list:
         if class_defs:
             print(class_def_list)
@@ -108,7 +107,13 @@ def main(argv):
     fleet = make_fleet(args.player, ship_specs)
     # Add ShipCLass if supplied
     if class_defs:
-        fleet['ShipClass'] = class_defs
+        #Remove definitions that are not used
+        scn = [ ship['Class'] for ship in fleet['Ships'] ]
+        uscn = set(scn)
+        used_ship_class = {}
+        for name in uscn:
+            used_ship_class[name] = class_defs[name]
+        fleet['ShipClass'] = used_ship_class
     fmt = json.dumps(fleet, indent=4)
     print(fmt)
     return 0
