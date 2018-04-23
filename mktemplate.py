@@ -3,42 +3,33 @@ import json
 
 Templates = {
 'ship_template': {
-		'Name' : 'ship_name',
-		'Class': 'ship_class_name',
+		'Name' : 'ship_name()',
+		'Class': 'ship_class_name()',
 		'Captain': 'captain_name()',
 		'CaptainRating': 'random.randint(1,100)',
 		'CrewMorale': 'random.randint(1,100)',
-		'BattleStrategy':'AttackStrongest',
+		'BattleStrategy':'random.choice(["AtkStrong","AtkWeak","AtkFast"])',
 	},
 'fleet_template': {
-		'FLEET' : {
-			'Player': 1,
-			'Name' : 'fleet_name',
-			'Admiral' : 'fleet_admiral_name',
-			'Ships':[
-				# Ship class repeats ...
-			]
-		}
+			'Player': 'player',
+			'Name' : 'fleet_name()',
+			'Admiral' : 'fleet_admiral_name()',
+			'Ships': []
 	},
 
 'class_template': {
-		'SHIP_CLASS' : {
-			'Player': 1,
-			'Ships':[
-				{
 					'Name' : 'ship_class_name',
 					'Armor': 100,
 					'Shield': 100,
 					'AntiMissile': 100,
-					'Laser': 100,
+					'Laser': {
+                        'Battery': 4,
+                        'Strength': 100,
+                    },
 					'Missile': {
 						'Battery': 4,
 						'Strength': 100,
 					},
-				
-				},
-			]
-		}
 	},
 }
 

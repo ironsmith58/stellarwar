@@ -14,6 +14,7 @@ def random_first():
 		first = rl.random_line(NAME_LIB+'female_names.txt')
 	return first
 
+
 def random_name():
 	first = random_first()
 	if random.randint(1,100) < 2:
@@ -22,6 +23,7 @@ def random_name():
 		last = rl.random_line(NAME_LIB+'last_names.txt')
 
 	return "%s %s" % (first, last)
+
 
 def main(argv):
 
@@ -33,6 +35,7 @@ def main(argv):
 	args = parser.parse_args()
 	for x in range(0, args.n):
 		print(random_name())
+
 
 if __name__ == '__main__':
 	try:

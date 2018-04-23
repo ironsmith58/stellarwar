@@ -37,12 +37,11 @@ def ship_class_name():
 
 
 def make_ship(ship_template):
-    ship_functions = {
+    functions = {
         'captain_name': captain_name,
         'ship_name': ship_name,
         'ship_class_name': ship_class_name,
         'random': random,
-        __builtins__: None,
         }
     variables = {
         'value': None,
@@ -51,7 +50,7 @@ def make_ship(ship_template):
     for key in ship_template:
         value = 0
         try:
-            exec("value="+ship_template[key], ship_functions, variables)
+            exec("value="+ship_template[key], functions, variables)
             value = variables['value']
         except Exception as e:
             #print(e)
@@ -72,8 +71,9 @@ def make_ships(nships, ship_class=None):
         ships.append(ship)
     return ships
 
+
 def main(argv):
-    parser = argparse.ArgumentParser(description='Process some integers.')
+    parser = argparse.ArgumentParser(description='Create ships for %s fleets.' % GAME_NAME) 
     parser.add_argument('-n','--number-ships', 
                         type=int, default=1,
                         help='number of ships to create (def=1)')
@@ -85,7 +85,8 @@ def main(argv):
     
     ships = make_ships(args.number_ships, args.ship_class)
     pp = pprint.PrettyPrinter(indent=4)
-    pp.pprint(ships)
+    fmt = json.dumps(ships, indent=4)
+    print(fmt)
     return 0
 
 if __name__ == '__main__':
