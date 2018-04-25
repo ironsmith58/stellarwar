@@ -1,0 +1,256 @@
+{
+    "Admiral": "Paul Burdett",
+    "Name": "Fleet of the East",
+    "Player": 4,
+    "ShipClass": {
+        "Cruiser": {
+            "AntiMissile": 60,
+            "Armor": 73,
+            "HTK": 70,
+            "Shield": 48,
+            "Weapon": [
+                {
+                    "Battery": 16,
+                    "Name": "Missile",
+                    "Range": 70,
+                    "Strength": 80
+                },
+                {
+                    "Battery": 10,
+                    "Name": "Laser",
+                    "Range": 14,
+                    "Strength": 30
+                }
+            ]
+        },
+        "Destroyer": {
+            "AntiMissile": 40,
+            "Armor": 56,
+            "HTK": 50,
+            "Shield": 23,
+            "Weapons": [
+                {
+                    "Battery": 4,
+                    "Name": "MissileSR",
+                    "Range": 68,
+                    "Strength": 65
+                },
+                {
+                    "Battery": 8,
+                    "Name": "Laser",
+                    "Range": 14,
+                    "Strength": 16
+                }
+            ]
+        }
+    },
+    "Ships": [
+        {
+            "BattleStrategy": "AtkFast",
+            "Captain": "Sandra Oakey",
+            "CaptainRating": 38,
+            "Class": "Destroyer",
+            "CrewMorale": 16,
+            "Name": "Penverne",
+            "number": 1
+        },
+        {
+            "BattleStrategy": "AtkWeak",
+            "Captain": "Kenneth Higgins",
+            "CaptainRating": 71,
+            "Class": "Destroyer",
+            "CrewMorale": 63,
+            "Name": "Maine",
+            "number": 2
+        },
+        {
+            "BattleStrategy": "AtkWeak",
+            "Captain": "Gregory Honeyman",
+            "CaptainRating": 71,
+            "Class": "Destroyer",
+            "CrewMorale": 30,
+            "Name": "Portugal",
+            "number": 3
+        },
+        {
+            "BattleStrategy": "AtkFast",
+            "Captain": "Alexis Hitchins",
+            "CaptainRating": 61,
+            "Class": "Destroyer",
+            "CrewMorale": 92,
+            "Name": "Shirley",
+            "number": 4
+        },
+        {
+            "BattleStrategy": "AtkStrong",
+            "Captain": "Amy Mooney",
+            "CaptainRating": 9,
+            "Class": "Destroyer",
+            "CrewMorale": 48,
+            "Name": "Compson",
+            "number": 5
+        },
+        {
+            "BattleStrategy": "AtkStrong",
+            "Captain": "Aaron Lyon",
+            "CaptainRating": 74,
+            "Class": "Destroyer",
+            "CrewMorale": 67,
+            "Name": "Susanna",
+            "number": 6
+        },
+        {
+            "BattleStrategy": "AtkStrong",
+            "Captain": "Jacob Slattery",
+            "CaptainRating": 84,
+            "Class": "Destroyer",
+            "CrewMorale": 43,
+            "Name": "Mounsey",
+            "number": 7
+        },
+        {
+            "BattleStrategy": "AtkStrong",
+            "Captain": "Bobby Cullingworth",
+            "CaptainRating": 18,
+            "Class": "Destroyer",
+            "CrewMorale": 79,
+            "Name": "Convert",
+            "number": 8
+        },
+        {
+            "BattleStrategy": "AtkFast",
+            "Captain": "Bruce Shackles",
+            "CaptainRating": 29,
+            "Class": "Destroyer",
+            "CrewMorale": 74,
+            "Name": "Essex",
+            "number": 9
+        },
+        {
+            "BattleStrategy": "AtkFast",
+            "Captain": "Lauren Farrall",
+            "CaptainRating": 75,
+            "Class": "Destroyer",
+            "CrewMorale": 94,
+            "Name": "Destruction",
+            "number": 10
+        },
+        {
+            "BattleStrategy": "AtkStrong",
+            "Captain": "Patricia Bregan",
+            "CaptainRating": 24,
+            "Class": "Destroyer",
+            "CrewMorale": 83,
+            "Name": "Carol",
+            "number": 11
+        },
+        {
+            "BattleStrategy": "AtkStrong",
+            "Captain": "Joshua Hurrell",
+            "CaptainRating": 84,
+            "Class": "Destroyer",
+            "CrewMorale": 15,
+            "Name": "Gregory",
+            "number": 12
+        },
+        {
+            "BattleStrategy": "AtkWeak",
+            "Captain": "Grace Brennan",
+            "CaptainRating": 94,
+            "Class": "Destroyer",
+            "CrewMorale": 4,
+            "Name": "Rogers",
+            "number": 13
+        },
+        {
+            "BattleStrategy": "AtkStrong",
+            "Captain": "Linda Haragan",
+            "CaptainRating": 100,
+            "Class": "Destroyer",
+            "CrewMorale": 91,
+            "Name": "O'Mahoney",
+            "number": 14
+        },
+        {
+            "BattleStrategy": "AtkFast",
+            "Captain": "Andrew Hynam",
+            "CaptainRating": 45,
+            "Class": "Destroyer",
+            "CrewMorale": 68,
+            "Name": "Equatorial Guinea",
+            "number": 15
+        },
+        {
+            "BattleStrategy": "AtkWeak",
+            "Captain": "Nancy Lance",
+            "CaptainRating": 81,
+            "Class": "Destroyer",
+            "CrewMorale": 61,
+            "Name": "Rachel",
+            "number": 16
+        },
+        {
+            "BattleStrategy": "AtkStrong",
+            "Captain": "Brian Beddow",
+            "CaptainRating": 45,
+            "Class": "Destroyer",
+            "CrewMorale": 86,
+            "Name": "Justinian",
+            "number": 17
+        },
+        {
+            "BattleStrategy": "AtkFast",
+            "Captain": "Randy Dymott",
+            "CaptainRating": 85,
+            "Class": "Destroyer",
+            "CrewMorale": 47,
+            "Name": "Meshach",
+            "number": 18
+        },
+        {
+            "BattleStrategy": "AtkStrong",
+            "Captain": "Dennis Keene",
+            "CaptainRating": 91,
+            "Class": "Destroyer",
+            "CrewMorale": 91,
+            "Name": "Bills",
+            "number": 19
+        },
+        {
+            "BattleStrategy": "AtkFast",
+            "Captain": "Frank Gaston",
+            "CaptainRating": 6,
+            "Class": "Destroyer",
+            "CrewMorale": 52,
+            "Name": "Defiant",
+            "number": 20
+        },
+        {
+            "BattleStrategy": "AtkFast",
+            "Captain": "Jennifer Windsor",
+            "CaptainRating": 48,
+            "Class": "Cruiser",
+            "CrewMorale": 81,
+            "Name": "Moneypenny",
+            "number": 21
+        },
+        {
+            "BattleStrategy": "AtkFast",
+            "Captain": "Ryan Noakes",
+            "CaptainRating": 55,
+            "Class": "Cruiser",
+            "CrewMorale": 65,
+            "Name": "Eve",
+            "number": 22
+        },
+        {
+            "BattleStrategy": "AtkFast",
+            "Captain": "Melissa Dennison",
+            "CaptainRating": 1,
+            "Class": "Cruiser",
+            "CrewMorale": 76,
+            "Name": "Barnabas",
+            "number": 23
+        }
+    ]
+}

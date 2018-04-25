@@ -1,0 +1,229 @@
+{
+    "Admiral": "Kenneth Carty",
+    "Name": "Fleet of the East",
+    "Player": 2,
+    "ShipClass": {
+        "Bireme": {
+            "AntiMissile": 40,
+            "Armor": 73,
+            "HTK": 80,
+            "Shield": 48,
+            "Weapons": [
+                {
+                    "Battery": 10,
+                    "Name": "Laser",
+                    "Range": 33,
+                    "Strength": 30
+                },
+                {
+                    "Battery": 16,
+                    "Name": "Missile",
+                    "Range": 64,
+                    "Strength": 80
+                }
+            ]
+        },
+        "Galley": {
+            "AntiMissile": 30,
+            "Armor": 56,
+            "HTK": 30,
+            "Shield": 23,
+            "Weapons": [
+                {
+                    "Battery": 8,
+                    "Name": "Laser",
+                    "Range": 15,
+                    "Strength": 16
+                },
+                {
+                    "Battery": 4,
+                    "Name": "Missile",
+                    "Range": 22,
+                    "Strength": 65
+                }
+            ]
+        }
+    },
+    "Ships": [
+        {
+            "BattleStrategy": "AtkWeak",
+            "Captain": "Jose Uttley",
+            "CaptainRating": 91,
+            "Class": "Bireme",
+            "CrewMorale": 21,
+            "Name": "Makepeace",
+            "number": 1
+        },
+        {
+            "BattleStrategy": "AtkFast",
+            "Captain": "Jack Goodall",
+            "CaptainRating": 47,
+            "Class": "Bireme",
+            "CrewMorale": 20,
+            "Name": "Troutbridge",
+            "number": 2
+        },
+        {
+            "BattleStrategy": "AtkFast",
+            "Captain": "Victoria Voakes",
+            "CaptainRating": 84,
+            "Class": "Bireme",
+            "CrewMorale": 65,
+            "Name": "Torrin",
+            "number": 3
+        },
+        {
+            "BattleStrategy": "AtkFast",
+            "Captain": "Paul Duckworth",
+            "CaptainRating": 36,
+            "Class": "Bireme",
+            "CrewMorale": 38,
+            "Name": "Elon",
+            "number": 4
+        },
+        {
+            "BattleStrategy": "AtkStrong",
+            "Captain": "Joshua Rayment",
+            "CaptainRating": 43,
+            "Class": "Bireme",
+            "CrewMorale": 10,
+            "Name": "Monarch",
+            "number": 5
+        },
+        {
+            "BattleStrategy": "AtkFast",
+            "Captain": "Deborah Frost",
+            "CaptainRating": 34,
+            "Class": "Bireme",
+            "CrewMorale": 65,
+            "Name": "Columbus",
+            "number": 6
+        },
+        {
+            "BattleStrategy": "AtkWeak",
+            "Captain": "Harold Friel",
+            "CaptainRating": 93,
+            "Class": "Bireme",
+            "CrewMorale": 5,
+            "Name": "Vass",
+            "number": 7
+        },
+        {
+            "BattleStrategy": "AtkFast",
+            "Captain": "Victoria Havers",
+            "CaptainRating": 36,
+            "Class": "Bireme",
+            "CrewMorale": 18,
+            "Name": "Lewin",
+            "number": 8
+        },
+        {
+            "BattleStrategy": "AtkFast",
+            "Captain": "Jacob Ruck",
+            "CaptainRating": 53,
+            "Class": "Galley",
+            "CrewMorale": 17,
+            "Name": "Chaudiere",
+            "number": 9
+        },
+        {
+            "BattleStrategy": "AtkWeak",
+            "Captain": "Alexander Hove",
+            "CaptainRating": 6,
+            "Class": "Galley",
+            "CrewMorale": 34,
+            "Name": "Timothy",
+            "number": 10
+        },
+        {
+            "BattleStrategy": "AtkStrong",
+            "Captain": "Janet Barry",
+            "CaptainRating": 52,
+            "Class": "Galley",
+            "CrewMorale": 54,
+            "Name": "Malik",
+            "number": 11
+        },
+        {
+            "BattleStrategy": "AtkWeak",
+            "Captain": "Benjamin Fenton",
+            "CaptainRating": 56,
+            "Class": "Galley",
+            "CrewMorale": 89,
+            "Name": "Brenda",
+            "number": 12
+        },
+        {
+            "BattleStrategy": "AtkFast",
+            "Captain": "Emily Milloy",
+            "CaptainRating": 34,
+            "Class": "Galley",
+            "CrewMorale": 87,
+            "Name": "Harry S. Truman",
+            "number": 13
+        },
+        {
+            "BattleStrategy": "AtkWeak",
+            "Captain": "Christian Trennery",
+            "CaptainRating": 41,
+            "Class": "Galley",
+            "CrewMorale": 68,
+            "Name": "Nicaragua",
+            "number": 14
+        },
+        {
+            "BattleStrategy": "AtkFast",
+            "Captain": "Sharon Staniforth",
+            "CaptainRating": 98,
+            "Class": "Galley",
+            "CrewMorale": 70,
+            "Name": "Judith",
+            "number": 15
+        },
+        {
+            "BattleStrategy": "AtkWeak",
+            "Captain": "Abigail Waterson",
+            "CaptainRating": 75,
+            "Class": "Galley",
+            "CrewMorale": 86,
+            "Name": "Judith",
+            "number": 16
+        },
+        {
+            "BattleStrategy": "AtkFast",
+            "Captain": "Susan Cleet",
+            "CaptainRating": 77,
+            "Class": "Galley",
+            "CrewMorale": 12,
+            "Name": "Essop",
+            "number": 17
+        },
+        {
+            "BattleStrategy": "AtkFast",
+            "Captain": "Diane Nicholls",
+            "CaptainRating": 80,
+            "Class": "Galley",
+            "CrewMorale": 52,
+            "Name": "Paskell",
+            "number": 18
+        },
+        {
+            "BattleStrategy": "AtkStrong",
+            "Captain": "Brenda Madeley",
+            "CaptainRating": 30,
+            "Class": "Galley",
+            "CrewMorale": 60,
+            "Name": "Hindostan",
+            "number": 19
+        },
+        {
+            "BattleStrategy": "AtkStrong",
+            "Captain": "Anna Hawksley",
+            "CaptainRating": 90,
+            "Class": "Galley",
+            "CrewMorale": 45,
+            "Name": "Janice",
+            "number": 20
+        }
+    ]
+}

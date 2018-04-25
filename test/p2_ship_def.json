@@ -1,0 +1,62 @@
+{
+    "Bireme": {
+        "AntiMissile": 40,
+        "Armor": 73,
+        "HTK": 80,
+        "Shield": 48,
+        "Weapons": [
+            {
+                "Battery": 10,
+                "Name": "Laser",
+                "Range": 33,
+                "Strength": 30
+            },
+            {
+                "Battery": 16,
+                "Name": "Missile",
+                "Range": 64,
+                "Strength": 80
+            }
+        ]
+    },
+    "Galley": {
+        "AntiMissile": 30,
+        "Armor": 56,
+        "HTK": 30,
+        "Shield": 23,
+        "Weapons": [
+            {
+                "Battery": 8,
+                "Name": "Laser",
+                "Range": 15,
+                "Strength": 16
+            },
+            {
+                "Battery": 4,
+                "Name": "Missile",
+                "Range": 22,
+                "Strength": 65
+            }
+        ]
+    },
+    "Trireme": {
+        "AntiMissile": 90,
+        "Armor": 100,
+        "HTK": 92,
+        "Shield": 100,
+        "Weapons": [
+            {
+                "Battery": 12,
+                "Name": "Laser",
+                "Range": 68,
+                "Strength": 45
+            },
+            {
+                "Battery": 24,
+                "Name": "Missile",
+                "Range": 71,
+                "Strength": 100
+            }
+        ]
+    }
+}

@@ -1,0 +1,299 @@
+{
+    "Admiral": "Adam Lowes",
+    "Name": "Fleet of the South",
+    "Player": 3,
+    "ShipClass": {
+        "Destroyer": {
+            "AntiMissile": 40,
+            "Armor": 56,
+            "HTK": 50,
+            "Shield": 23,
+            "Weapons": [
+                {
+                    "Battery": 4,
+                    "Name": "MissileSR",
+                    "Range": 68,
+                    "Strength": 65
+                },
+                {
+                    "Battery": 8,
+                    "Name": "Laser",
+                    "Range": 14,
+                    "Strength": 16
+                }
+            ]
+        }
+    },
+    "Ships": [
+        {
+            "BattleStrategy": "AtkStrong",
+            "Captain": "Jean Godfrey",
+            "CaptainRating": 37,
+            "Class": "Destroyer",
+            "CrewMorale": 88,
+            "Name": "Malaysia",
+            "number": 1
+        },
+        {
+            "BattleStrategy": "AtkFast",
+            "Captain": "Sarah Twiggs",
+            "CaptainRating": 19,
+            "Class": "Destroyer",
+            "CrewMorale": 96,
+            "Name": "Silas",
+            "number": 2
+        },
+        {
+            "BattleStrategy": "AtkStrong",
+            "Captain": "Ralph Haycock",
+            "CaptainRating": 68,
+            "Class": "Destroyer",
+            "CrewMorale": 8,
+            "Name": "Nicholas",
+            "number": 3
+        },
+        {
+            "BattleStrategy": "AtkWeak",
+            "Captain": "Keith Binns",
+            "CaptainRating": 99,
+            "Class": "Destroyer",
+            "CrewMorale": 94,
+            "Name": "Paul Hamilton",
+            "number": 4
+        },
+        {
+            "BattleStrategy": "AtkFast",
+            "Captain": "Heather Enright",
+            "CaptainRating": 76,
+            "Class": "Destroyer",
+            "CrewMorale": 21,
+            "Name": "Russell",
+            "number": 5
+        },
+        {
+            "BattleStrategy": "AtkWeak",
+            "Captain": "Grace Smithe",
+            "CaptainRating": 23,
+            "Class": "Destroyer",
+            "CrewMorale": 89,
+            "Name": "Simon",
+            "number": 6
+        },
+        {
+            "BattleStrategy": "AtkWeak",
+            "Captain": "Gabriel Maccartney",
+            "CaptainRating": 63,
+            "Class": "Destroyer",
+            "CrewMorale": 62,
+            "Name": "Vass",
+            "number": 7
+        },
+        {
+            "BattleStrategy": "AtkWeak",
+            "Captain": "Brandon Ingleby",
+            "CaptainRating": 17,
+            "Class": "Destroyer",
+            "CrewMorale": 42,
+            "Name": "Stott",
+            "number": 8
+        },
+        {
+            "BattleStrategy": "AtkWeak",
+            "Captain": "Jacqueline Wares",
+            "CaptainRating": 61,
+            "Class": "Destroyer",
+            "CrewMorale": 97,
+            "Name": "Providence",
+            "number": 9
+        },
+        {
+            "BattleStrategy": "AtkWeak",
+            "Captain": "Megan Lumb",
+            "CaptainRating": 71,
+            "Class": "Destroyer",
+            "CrewMorale": 16,
+            "Name": "Laura",
+            "number": 10
+        },
+        {
+            "BattleStrategy": "AtkStrong",
+            "Captain": "Maria Paynter",
+            "CaptainRating": 71,
+            "Class": "Destroyer",
+            "CrewMorale": 32,
+            "Name": "Destruction",
+            "number": 11
+        },
+        {
+            "BattleStrategy": "AtkWeak",
+            "Captain": "Frank Helgesson",
+            "CaptainRating": 97,
+            "Class": "Destroyer",
+            "CrewMorale": 52,
+            "Name": "Jose",
+            "number": 12
+        },
+        {
+            "BattleStrategy": "AtkStrong",
+            "Captain": "Christina Lapham",
+            "CaptainRating": 99,
+            "Class": "Destroyer",
+            "CrewMorale": 2,
+            "Name": "Mark",
+            "number": 13
+        },
+        {
+            "BattleStrategy": "AtkStrong",
+            "Captain": "Kyle Whitmarsh",
+            "CaptainRating": 60,
+            "Class": "Destroyer",
+            "CrewMorale": 6,
+            "Name": "Phoebe",
+            "number": 14
+        },
+        {
+            "BattleStrategy": "AtkStrong",
+            "Captain": "Frances Purkis",
+            "CaptainRating": 16,
+            "Class": "Destroyer",
+            "CrewMorale": 63,
+            "Name": "Elijah",
+            "number": 15
+        },
+        {
+            "BattleStrategy": "AtkFast",
+            "Captain": "Anna Sleeman",
+            "CaptainRating": 21,
+            "Class": "Destroyer",
+            "CrewMorale": 63,
+            "Name": "Constant Reformation",
+            "number": 16
+        },
+        {
+            "BattleStrategy": "AtkFast",
+            "Captain": "Sandra Mccole",
+            "CaptainRating": 26,
+            "Class": "Destroyer",
+            "CrewMorale": 43,
+            "Name": "Uganda",
+            "number": 17
+        },
+        {
+            "BattleStrategy": "AtkStrong",
+            "Captain": "Marie Simpkins",
+            "CaptainRating": 52,
+            "Class": "Destroyer",
+            "CrewMorale": 86,
+            "Name": "Tabitha",
+            "number": 18
+        },
+        {
+            "BattleStrategy": "AtkStrong",
+            "Captain": "Edward Eyles",
+            "CaptainRating": 75,
+            "Class": "Destroyer",
+            "CrewMorale": 65,
+            "Name": "Ronald",
+            "number": 19
+        },
+        {
+            "BattleStrategy": "AtkStrong",
+            "Captain": "Paul Prevost",
+            "CaptainRating": 34,
+            "Class": "Destroyer",
+            "CrewMorale": 42,
+            "Name": "Jeremy",
+            "number": 20
+        },
+        {
+            "BattleStrategy": "AtkFast",
+            "Captain": "Anna Laughlan",
+            "CaptainRating": 10,
+            "Class": "Destroyer",
+            "CrewMorale": 96,
+            "Name": "Gregory",
+            "number": 21
+        },
+        {
+            "BattleStrategy": "AtkWeak",
+            "Captain": "Bruce Rainford",
+            "CaptainRating": 54,
+            "Class": "Destroyer",
+            "CrewMorale": 90,
+            "Name": "Thom",
+            "number": 22
+        },
+        {
+            "BattleStrategy": "AtkWeak",
+            "Captain": "Jesse Nielsen",
+            "CaptainRating": 16,
+            "Class": "Destroyer",
+            "CrewMorale": 50,
+            "Name": "Seth",
+            "number": 23
+        },
+        {
+            "BattleStrategy": "AtkStrong",
+            "Captain": "Joyce Mccastle",
+            "CaptainRating": 1,
+            "Class": "Destroyer",
+            "CrewMorale": 6,
+            "Name": "Amber",
+            "number": 24
+        },
+        {
+            "BattleStrategy": "AtkStrong",
+            "Captain": "Justin Buxey",
+            "CaptainRating": 72,
+            "Class": "Destroyer",
+            "CrewMorale": 31,
+            "Name": "Abigail",
+            "number": 25
+        },
+        {
+            "BattleStrategy": "AtkFast",
+            "Captain": "Ethan Silcock",
+            "CaptainRating": 20,
+            "Class": "Destroyer",
+            "CrewMorale": 14,
+            "Name": "Mcmenemy",
+            "number": 26
+        },
+        {
+            "BattleStrategy": "AtkFast",
+            "Captain": "Ashley Alves",
+            "CaptainRating": 93,
+            "Class": "Destroyer",
+            "CrewMorale": 25,
+            "Name": "Cocos (Keeling) Islands",
+            "number": 27
+        },
+        {
+            "BattleStrategy": "AtkWeak",
+            "Captain": "Ann Spearing",
+            "CaptainRating": 2,
+            "Class": "Destroyer",
+            "CrewMorale": 6,
+            "Name": "Joseph",
+            "number": 28
+        },
+        {
+            "BattleStrategy": "AtkFast",
+            "Captain": "Ashley Mcfarlane",
+            "CaptainRating": 12,
+            "Class": "Destroyer",
+            "CrewMorale": 7,
+            "Name": "Palma",
+            "number": 29
+        },
+        {
+            "BattleStrategy": "AtkFast",
+            "Captain": "Nicole Janes",
+            "CaptainRating": 28,
+            "Class": "Destroyer",
+            "CrewMorale": 58,
+            "Name": "Miriam",
+            "number": 30
+        }
+    ]
+}
