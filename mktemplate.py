@@ -1,4 +1,8 @@
 #!/usr/bin/python3.4
+'''stellarwar: make templates for ship, ship classes and fleets
+
+Values can be generated specifiing code to be execed
+'''
 import json
 
 Templates = {
