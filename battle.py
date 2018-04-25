@@ -22,8 +22,42 @@ def calc_morale(fleets):
         
 
 def battle(fleets):
-    pprint.pprint(fleets, indent=4)
+    logging.info('Starting battle with %d fleets' % len(fleets))
+    for fleet in fleets.values():
+        fleet['Range'] = random.randint(1,100)
+        logging.info('%32s player %d   range %d' %(fleet['Name'], fleet['Player'], fleet['Range']))
+    Done = False
+    TurnsWithNoCombat = 0
+    TurnNumber = 0
+    while not Done:
+        TurnNumber = TurnNumber + 1
+        for fleet_idx in fleets:
+            fleet = fleets[fleet_idx]
+            oponents = [ f for f in fleets if f != fleet_idx ]
+            target_fleet = fleets[random.choice(oponents)]
+            target_ships = target_fleet['Ships']
+            target_fleet_range = fleet['Range'] + target_fleet['Range']
+            logging.info('%d:%s attacking %s at range %d' % (TurnNumber, fleet['Name'], target_fleet['Name'], target_fleet_range))
+            ShipsThatAttacked = 0
+            op_ships = target_fleet['Ships']
+            for ship in fleet['Ships']:
+                ship_class = fleet['ShipClass'][ship['Class']]
+                for wpn in ship_class['Weapons']:
+                    for x in range(1, int(wpn['Battery'])):
+                        target = random.choice(target_ships)
+                        dmg = random.randint(1, wpn['Strength'])
+                        stat = (TurnNumber,ship['Name'], wpn['Name'], target['Name'], x, dmg)
+                        logging.info('%d:%s Firing %s on %s, battery %d - %d damage' % stat)
 
+        if ShipsThatAttacked == 0:
+            TurnsWithNoCombat = TurnsWithNoCombat + 1
+
+        #Check for Done
+        if TurnsWithNoCombat >= 4:
+            Done = True
+            logging.info('4 turns with no combat, done')
+            continue
+        
 
 def main(argv):
     parser = argparse.ArgumentParser()

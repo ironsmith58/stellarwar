@@ -114,7 +114,7 @@ def main(argv):
         for name in uscn:
             used_ship_class[name] = class_defs[name]
         fleet['ShipClass'] = used_ship_class
-    fmt = json.dumps(fleet, indent=4)
+    fmt = json.dumps(fleet, indent=4, sort_keys=True)
     print(fmt)
     return 0
 

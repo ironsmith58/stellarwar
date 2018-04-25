@@ -23,21 +23,28 @@ Templates = {
 
 'class_template': {
 					'Name' : 'ship_class_name',
+                    'HTK' : 100,
 					'Armor': 100,
 					'Shield': 100,
 					'AntiMissile': 100,
-					'Laser': {
-                        'Battery': 4,
-                        'Strength': 100,
-                    },
-					'Missile': {
-						'Battery': 4,
-						'Strength': 100,
-					},
+                    'Weapons': [
+                        {
+                            'Name':'Laser',
+                            'Battery': 4,
+                            'Strength': 100,
+                            'Range': 50,
+                        },
+                        {
+                            'Name': 'Missile',
+                            'Battery': 4,
+                            'Strength': 100,
+                            'Range': 50,
+                        },
+                    ],
 	},
 }
 
 for templ in Templates:
 	print('Writing %s' % templ)
 	with open(templ+'.json', 'w') as f:
-		json.dump(Templates[templ], f, indent=4)
+		json.dump(Templates[templ], f, indent=4, sort_keys=True)
