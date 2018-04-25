@@ -33,11 +33,13 @@ def battle(fleets):
         TurnNumber = TurnNumber + 1
         for fleet_idx in fleets:
             fleet = fleets[fleet_idx]
+            fleet_name = fleet['Name']
             oponents = [ f for f in fleets if f != fleet_idx ]
             target_fleet = fleets[random.choice(oponents)]
+            target_fleet_name = target_fleet['Name']
             target_ships = target_fleet['Ships']
             target_fleet_range = fleet['Range'] + target_fleet['Range']
-            logging.info('%d:%s attacking %s at range %d' % (TurnNumber, fleet['Name'], target_fleet['Name'], target_fleet_range))
+            logging.info('%d:%s attacking %s at range %d' % (TurnNumber, fleet_name, target_fleet_name, target_fleet_range))
             ShipsThatAttacked = 0
             op_ships = target_fleet['Ships']
             for ship in fleet['Ships']:
@@ -46,8 +48,8 @@ def battle(fleets):
                     for x in range(1, int(wpn['Battery'])):
                         target = random.choice(target_ships)
                         dmg = random.randint(1, wpn['Strength'])
-                        stat = (TurnNumber,ship['Name'], wpn['Name'], target['Name'], x, dmg)
-                        logging.info('%d:%s Firing %s on %s, battery %d - %d damage' % stat)
+                        stat = (TurnNumber, fleet_name, ship['Name'], wpn['Name'], target_fleet_name, target['Name'], x, dmg)
+                        logging.info('%d:%s:%s Firing %s on %s:%s, battery %d - %d damage' % stat)
 
         if ShipsThatAttacked == 0:
             TurnsWithNoCombat = TurnsWithNoCombat + 1

@@ -8,7 +8,7 @@
             "Armor": 73,
             "HTK": 70,
             "Shield": 48,
-            "Weapon": [
+            "Weapons": [
                 {
                     "Battery": 16,
                     "Name": "Missile",
