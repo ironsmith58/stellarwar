@@ -58,7 +58,9 @@ def apply_dmg(target, dmg, dmg_type):
     dmg_type = dmg_type.lower()
     target['HTK'] = target['HTK'] - dmg
     if target['HTK'] <= 0:
-        print('        %s has been destroyed' % target['Name'])
+        print('          %s has been destroyed' % target['Name'])
+    else:
+        print('          %s has taken %d hits %d HTK remain' % (target['Name'], dmg, target['HTK']))
 
 def battle(fleets):
     print('Starting battle with %d fleets' % len(fleets))
@@ -89,7 +91,6 @@ def battle(fleets):
             op_ships = target_fleet['Ships']
             for ship in fleet['Ships']:
                 ship_class = fleet['ShipClass'][ship['Class']]
-                print(ship_class)
                 for wpn in ship_class['Weapons']:
                     for x in range(1, int(wpn['Battery'])):
                         target = random.choice(target_ships)
