@@ -6,21 +6,21 @@
         "Destroyer": {
             "AntiMissile": 40,
             "Armor": 56,
-            "HTK": 50,
+            "HTK": 500,
             "Shield": 23,
             "Weapons": [
                 {
                     "Battery": 4,
                     "Name": "MissileSR",
                     "Range": 68,
-                    "Strength": 65,
+                    "Strength": 7,
                     "Type": "missile"
                 },
                 {
                     "Battery": 8,
                     "Name": "Laser",
                     "Range": 14,
-                    "Strength": 16,
+                    "Strength": 2,
                     "Type": "energy"
                 }
             ]

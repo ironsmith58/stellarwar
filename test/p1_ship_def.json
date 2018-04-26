@@ -2,7 +2,7 @@
     "Battleship": {
         "AntiMissile": 100,
         "Armor": 100,
-        "HTK": 100,
+        "HTK": 1000,
         "Shield": 100,
         "Weapons": [
             {
@@ -38,7 +38,7 @@
     "Cruiser": {
         "AntiMissile": 60,
         "Armor": 73,
-        "HTK": 70,
+        "HTK": 700,
         "Shield": 48,
         "Weapons": [
             {
@@ -60,7 +60,7 @@
     "Destroyer": {
         "AntiMissile": 40,
         "Armor": 56,
-        "HTK": 50,
+        "HTK": 500,
         "Shield": 23,
         "Weapons": [
             {

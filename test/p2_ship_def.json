@@ -2,7 +2,7 @@
     "Bireme": {
         "AntiMissile": 40,
         "Armor": 73,
-        "HTK": 80,
+        "HTK": 800,
         "Shield": 48,
         "Weapons": [
             {
@@ -24,7 +24,7 @@
     "Galley": {
         "AntiMissile": 30,
         "Armor": 56,
-        "HTK": 30,
+        "HTK": 300,
         "Shield": 23,
         "Weapons": [
             {
@@ -46,7 +46,7 @@
     "Trireme": {
         "AntiMissile": 90,
         "Armor": 100,
-        "HTK": 92,
+        "HTK": 920,
         "Shield": 100,
         "Weapons": [
             {

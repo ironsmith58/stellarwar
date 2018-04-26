@@ -6,21 +6,21 @@
         "Bireme": {
             "AntiMissile": 40,
             "Armor": 73,
-            "HTK": 80,
+            "HTK": 800,
             "Shield": 48,
             "Weapons": [
                 {
                     "Battery": 10,
                     "Name": "Laser",
                     "Range": 33,
-                    "Strength": 30,
+                    "Strength": 3,
                     "Type": "energy"
                 },
                 {
                     "Battery": 16,
                     "Name": "Missile",
                     "Range": 64,
-                    "Strength": 80,
+                    "Strength": 8,
                     "Type": "missile"
                 }
             ]
@@ -28,21 +28,21 @@
         "Galley": {
             "AntiMissile": 30,
             "Armor": 56,
-            "HTK": 30,
+            "HTK": 300,
             "Shield": 23,
             "Weapons": [
                 {
                     "Battery": 8,
                     "Name": "Laser",
                     "Range": 15,
-                    "Strength": 16,
+                    "Strength": 2,
                     "Type": "energy"
                 },
                 {
                     "Battery": 4,
                     "Name": "Missile",
                     "Range": 22,
-                    "Strength": 65,
+                    "Strength": 7,
                     "Type": "missile"
                 }
             ]
