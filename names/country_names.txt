@@ -41,14 +41,14 @@ Chad
 Chile
 China
 Christmas Island
-Cocos (Keeling) Islands
+Cocos Islands
 Colombia
 Comoros
-Democratic Republic of the Congo (Kinshasa)
+Democratic Republic of the Congo 
 Congo
 Cook Islands
 Costa Rica
-Côte D'ivoire (Ivory Coast)
+Côte D'ivoire
 Croatia
 Cuba
 Cyprus
@@ -57,7 +57,7 @@ Denmark
 Djibouti
 Dominica
 Dominican Republic
-East Timor (Timor-Leste)
+East Timor
 Ecuador
 Egypt
 El Salvador
@@ -188,7 +188,7 @@ Serbia
 Seychelles
 Sierra Leone
 Singapore
-Slovakia (Slovak Republic)
+Slovakia
 Slovenia
 Solomon Islands
 Somalia
@@ -202,12 +202,12 @@ Swaziland
 Sweden
 Switzerland
 Syria
-Taiwan (Republic of China)
+Taiwan
 Tajikistan
-Tanzania; officially the United Republic of Tanzania
+Tanzania
 Thailand
 Tibet
-Timor-Leste (East Timor)
+Timor-Leste
 Togo
 Tokelau
 Tonga
@@ -225,12 +225,13 @@ United States
 Uruguay
 Uzbekistan
 Vanuatu
-Vatican City State (Holy See)
+Vatican City
 Venezuela
 Vietnam
-Virgin Islands (British)
-Virgin Islands (U.S.)
-Wallis and Futuna Islands
+Virgin Islands
+Virgin Islands
+Wallis Islands
+Futuna Islands
 Western Sahara
 Yemen
 Zambia
