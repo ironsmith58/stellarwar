@@ -17,19 +17,28 @@ def admiral_name():
 
 
 def fleet_name():
+    dir = random.choice(['North', 'South', 'East', 'West'])
+    alpha = random.choice(['Alpha', 'Beta', 'Gamma', 'Delta', 'Epsilon',
+                'Zeta', 'Eta', 'Iota', 'Theta', 'Kappa', 'Lambda', 'Nu',
+                'Mu', 'Xi', 'Omicron', 'Pi', 'Rho', 'Sigma', 'Tau',
+                'Upsilon', 'Phi', 'Psi', 'Chi', 'Omega' ])
+    mil = random.choice(['Alpha', 'Bravo', 'Charlie', 'Delta', 'Echo',
+                        'Foxtrot', 'Golf', 'Hotel', 'India', 'Juliet',
+                        'Kilo', 'Lima', 'Mike', 'November', 'Oscar',
+                        'Papa', 'Quebec', 'Rome', 'Sierra', 'Tango',
+                        'Uniform', 'Victor', 'Whiskey', 'Xray',
+                        'Yankee', 'Zulu'])
+    noun = random_line.random_line('nouns.txt')  
+    adj = random_line.random_line('adjectives.txt')  
     fn = [
-        'Fleet of the West',
-        'Fleet of the East',
-        'Fleet of the North',
-        'Fleet of the South',
-        'Task Force Alpha',
-        'Task Force Beta',
-        'Task Force Gamma',
-        'Task Force Delta',
-        'Task Force Epsilon',
-        '
+        'Fleet of the {dir}',
+        'Task Force {alpha}',
+        'Task Force {mil}',
+        'Fleet of the {adj} {noun}',
+        '{mil} Fleet',
     ]
-    return random.choice(fn)
+    fmt =  random.choice(fn)
+    return fmt.format(alpha=alpha,dir=dir,noun=noun,adj=adj,mil=mil)
 
 
 def load_ship_classes(ship_def):
