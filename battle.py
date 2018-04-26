@@ -68,8 +68,9 @@ def battle(fleets):
         fleet['Range'] = random.randint(1,100)
         print('%32s player %d   range %d' %(fleet['Name'], fleet['Player'], fleet['Range']))
         # Set each ship to full health
+        ship_class_lib = fleet['ShipClass']
         for ship in fleet['Ships']:
-            ship_class = fleet['ShipClass'][ship['Class']]
+            ship_class = ship_class_lib[ship['Class']]
             ship['HTK'] = ship_class['HTK']
             
     TurnsWithNoCombat = 0
@@ -93,21 +94,25 @@ def battle(fleets):
                 ship_class = fleet['ShipClass'][ship['Class']]
                 for wpn in ship_class['Weapons']:
                     for x in range(1, int(wpn['Battery'])):
-                        target = random.choice(target_ships)
-                        dmg = calc_dmg(wpn['Strength'])
-                        dmg_type = wpn['Type']
-                        stat = (TurnNumber, fleet_name, ship['Name'], wpn['Name'], target_fleet_name, target['Name'], x, dmg)
-                        print('%d:%s:%s Firing %s on %s:%s, battery %d - %d damage' % stat)
-                        apply_dmg(target, dmg, dmg_type)
+                        if wpn['Range'] >= target_fleet_range:
+                            dmg = calc_dmg(wpn['Strength'])
+                            dmg_type = wpn['Type']
+                            target = random.choice(target_ships)
+                            stat = (TurnNumber, fleet_name, ship['Name'], wpn['Name'], target_fleet_name, target['Name'], x, dmg)
+                            print('%d:%s:%s Firing %s on %s:%s, battery %d - %d damage' % stat)
+                            apply_dmg(target, dmg, dmg_type)
+                            ShipsThatAttacked = ShipsThatAttacked + 1
 
         if ShipsThatAttacked == 0:
             TurnsWithNoCombat = TurnsWithNoCombat + 1
 
         for fleet_idx in fleets:
             fleet = fleets[fleet_idx]
+            fleet_len = len([s for s in fleet['Ships'] if s['HTK'] > 0 ])
+            print('%d:%s has %d ships remaining' %(TurnNumber, fleet['Name'], fleet_len))
             if not len([s for s in fleet['Ships'] if s['HTK'] > 0 ]):
                 BattleContinues = False
-                print('Fleet %s totaly destroyed' % fleet['Name'])
+                print('Fleet %s totally destroyed' % fleet['Name'])
 
         #Check for Done
         if TurnsWithNoCombat >= 4:
@@ -124,6 +129,9 @@ def battle(fleets):
                 print('%32s player %d moving to range %d' %(fleet['Name'], fleet['Player'], fleet['Range']))
             else:
                 print('%32s player %d at close range %d' %(fleet['Name'], fleet['Player'], fleet['Range']))
+
+    #Combat is over, save final fleet records
+    json.dump(fleets, open('final_fleet.txt', 'w'), indent=4, sort_keys=True)
 
         
 
