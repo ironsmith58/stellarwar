@@ -9,12 +9,14 @@
                 "Battery": 10,
                 "Name": "Laser",
                 "Range": 33,
+                "Type": "energy",
                 "Strength": 30
             },
             {
                 "Battery": 16,
                 "Name": "Missile",
                 "Range": 64,
+                "Type": "missile",
                 "Strength": 80
             }
         ]
@@ -29,12 +31,14 @@
                 "Battery": 8,
                 "Name": "Laser",
                 "Range": 15,
+                "Type": "energy",
                 "Strength": 16
             },
             {
                 "Battery": 4,
                 "Name": "Missile",
                 "Range": 22,
+                "Type": "missile",
                 "Strength": 65
             }
         ]
@@ -49,12 +53,14 @@
                 "Battery": 12,
                 "Name": "Laser",
                 "Range": 68,
+                "Type": "energy",
                 "Strength": 45
             },
             {
                 "Battery": 24,
                 "Name": "Missile",
                 "Range": 71,
+                "Type": "missile",
                 "Strength": 100
             }
         ]

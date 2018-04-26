@@ -9,24 +9,28 @@
                 "Battery": 18,
                 "Name": "MissileLR",
                 "Range": 80,
+                "Type": "missile",
                 "Strength": 100
             },
             {
                 "Battery": 24,
                 "Name": "MissileSR",
                 "Range": 68,
+                "Type": "missile",
                 "Strength": 70
             },
             {
                 "Battery": 12,
                 "Name": "LaserLR",
                 "Range": 50,
+                "Type": "energy",
                 "Strength": 45
             },
             {
                 "Battery": 36,
                 "Name": "LaserSR",
                 "Range": 12,
+                "Type": "energy",
                 "Strength": 30
             }
         ]
@@ -36,17 +40,19 @@
         "Armor": 73,
         "HTK": 70,
         "Shield": 48,
-        "Weapon": [
+        "Weapons": [
             {
                 "Battery": 16,
                 "Name": "Missile",
                 "Range": 70,
+                "Type": "missile",
                 "Strength": 80
             },
             {
                 "Battery": 10,
                 "Name": "Laser",
                 "Range": 14,
+                "Type": "energy",
                 "Strength": 30
             }
         ]
@@ -60,6 +66,7 @@
             {
                 "Battery": 4,
                 "Name": "MissileSR",
+                "Type": "missile",
                 "Range": 68,
                 "Strength": 65
             },
@@ -67,6 +74,7 @@
                 "Battery": 8,
                 "Name": "Laser",
                 "Range": 14,
+                "Type": "energy",
                 "Strength": 16
             }
         ]

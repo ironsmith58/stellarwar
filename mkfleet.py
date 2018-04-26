@@ -22,6 +22,12 @@ def fleet_name():
         'Fleet of the East',
         'Fleet of the North',
         'Fleet of the South',
+        'Task Force Alpha',
+        'Task Force Beta',
+        'Task Force Gamma',
+        'Task Force Delta',
+        'Task Force Epsilon',
+        '
     ]
     return random.choice(fn)
 

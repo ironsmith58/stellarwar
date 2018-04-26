@@ -1,6 +1,6 @@
 {
-    "Admiral": "Kathleen Jonhson",
-    "Name": "Ka-non Fleet",
+    "Admiral": "Dinah Riddler",
+    "Name": "Fleet of the East",
     "Player": 1,
     "ShipClass": {
         "Battleship": {
@@ -13,25 +13,29 @@
                     "Battery": 18,
                     "Name": "MissileLR",
                     "Range": 80,
-                    "Strength": 100
+                    "Strength": 100,
+                    "Type": "missile"
                 },
                 {
                     "Battery": 24,
                     "Name": "MissileSR",
                     "Range": 68,
-                    "Strength": 70
+                    "Strength": 70,
+                    "Type": "missile"
                 },
                 {
                     "Battery": 12,
                     "Name": "LaserLR",
                     "Range": 50,
-                    "Strength": 45
+                    "Strength": 45,
+                    "Type": "energy"
                 },
                 {
                     "Battery": 36,
                     "Name": "LaserSR",
                     "Range": 12,
-                    "Strength": 30
+                    "Strength": 30,
+                    "Type": "energy"
                 }
             ]
         }
@@ -39,11 +43,11 @@
     "Ships": [
         {
             "BattleStrategy": "AtkStrong",
-            "Captain": "Elizabeth Mallender",
-            "CaptainRating": 80,
+            "Captain": "Tomaso Pearse",
+            "CaptainRating": 73,
             "Class": "Battleship",
-            "CrewMorale": 87,
-            "Name": "Wratten",
+            "CrewMorale": 67,
+            "Name": "Marathon",
             "number": 1
         }
     ]
