@@ -5,13 +5,15 @@ import argparse
 import logging
 import random
 import pprint
+from collections import Counter
 
 
 def load_fleet(fleet_file):
-    flt = json.load(open(fleet_file))
-    player = flt['Player']
-    name = flt['Name']
-    return player,name,flt
+    fleet = json.load(open(fleet_file))
+    player = fleet['Player']
+    name = fleet['Name']
+    fleet['filename'] = fleet_file
+    return player,name,fleet
 
 
 def calc_morale(fleets):
@@ -142,10 +144,15 @@ def main(argv):
     args = parser.parse_args(argv[1:])
     print(args)
     fleets = {}
+    player_counter = Counter()
     for fleet in args.fleetfiles:
         player,name,fleet = load_fleet(fleet)
         print('Loading fleet "%s" for player %d' % (name, player))
+        player_counter.update([player])
         fleets['%d_%s'%(player,name)] = fleet
+    if len(player_counter) < 2:
+        print('All fleets are owned by the same player, done')
+        return
     fleets = calc_morale(fleets)
     fleets = battle(fleets)
 
